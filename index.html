@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generator serii</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+<link rel="shortcut icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<link rel="shortcut icon" type="image/png" href="favicon-180x180.png" sizes="180x180">
+<link rel="shortcut icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vexflow/releases/vexflow-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/addons/p5.sound.js"></script>
+
+  </head>
+  <body>
+    <main>
+      <div id="generate">
+        <button id="generator">Generuj serię</button>
+        <div class="check">
+          <input type="checkbox" id="allintervals" name="allintervals" />
+          <label for="allintervals">Seria wszechinterwałowa</label>
+        </div>
+      </div>
+      <h3 class="supertitle hblue">seria podstawowa</h1>
+      <div class="wrapper blue" id="wrapper">
+        <div class="notes" id="score1"></div>
+        <div class="letters" id="series"></div>
+        <div class="playBtn" id="p5series"><p>posłuchaj</p></div>
+      </div>
+      <h3 class="supertitle hred">rak</h1>
+      <div class="wrapper red">
+        <div class="notes" id="score2"></div>
+        <div class="letters" id="retrograde"></div>
+        <div class="playBtn" id="p5retrograde"><p>posłuchaj</p></div>
+      </div>
+      <h3 class="supertitle hyellow">inwersja</h1>
+      <div class="wrapper yellow">
+        <div class="notes" id="score3"></div>
+        <div class="letters" id="inverted"></div>
+        <div class="playBtn" id="p5inverted"><p>posłuchaj</p></div>
+      </div>
+      <h3 class="supertitle hgreen">rak inwersji</h1>
+      <div class="wrapper green">
+        <div class="notes" id="score4"></div>
+        <div class="letters" id="invRet"></div>
+        <div class="playBtn" id="p5invret"><p>posłuchaj</p></div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+    <script src="play.js"></script>
+  </body>
+</html>

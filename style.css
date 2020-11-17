@@ -1,0 +1,383 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+main {
+  margin: 1vh auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+#generate {
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: flex-start;
+}
+
+.check {
+  color: #32668a;
+  display: block;
+}
+
+input,
+label {
+  cursor: pointer;
+}
+
+#generator {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 10vh;
+  min-height: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 5px solid #32668a;
+  outline: none;
+  font-size: 1.6em;
+  color: #32668a;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+#generator:hover {
+  background-color: #32668a;
+  border-color: #32668a;
+  color: #fff;
+}
+
+.supertitle {
+  margin: 0 auto 0 10vw;
+}
+
+.hblue {
+  color: #94bcd9;
+}
+
+.hred {
+  color: #f1661c;
+}
+
+.hyellow {
+  color: #edae1d;
+}
+
+.hgreen {
+  color: #748d4c;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 125px;
+  width: 70vw;
+  margin: 0 auto 1vh;
+  padding: 0 5vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blue {
+  border: 5px solid #94bcd9;
+}
+
+.red {
+  border: 5px solid #f1661c;
+}
+
+.yellow {
+  border: 5px solid #edae1d;
+}
+
+.green {
+  border: 5px solid #748d4c;
+}
+
+#series {
+  color: #94bcd9;
+}
+
+#retrograde {
+  color: #f1661c;
+}
+
+#inverted {
+  color: #edae1d;
+}
+
+#invRet {
+  color: #748d4c;
+}
+
+.playBtn {
+  width: auto;
+  height: 5vh;
+  min-height: 25px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.stopBtn {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border: 2px solid black;
+  -webkit-clip-path: none;
+          clip-path: none;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+p {
+  margin: 0;
+  text-align: center;
+  line-height: 5vh;
+  vertical-align: text-bottom;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#p5series {
+  color: #94bcd9;
+  border: 5px solid #94bcd9;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+#p5series:hover {
+  color: #fff;
+  background-color: #94bcd9;
+}
+
+#p5retrograde {
+  color: #f1661c;
+  border: 5px solid #f1661c;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+#p5retrograde:hover {
+  color: #fff;
+  background-color: #f1661c;
+}
+
+#p5inverted {
+  color: #edae1d;
+  border: 5px solid #edae1d;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+#p5inverted:hover {
+  color: #fff;
+  background-color: #edae1d;
+}
+
+#p5invret {
+  color: #748d4c;
+  border: 5px solid #748d4c;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+#p5invret:hover {
+  color: #fff;
+  background-color: #748d4c;
+}
+
+.notes {
+  width: 100px;
+  height: 100px;
+}
+
+.letters {
+  height: inherit;
+  font-family: inherit;
+  width: auto;
+  margin: 5px 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 75vw;
+    height: 180px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .playBtn {
+    margin: 115px auto;
+    height: 3vh;
+  }
+  p {
+    line-height: 3vh;
+  }
+  .notes {
+    position: absolute;
+    width: inherit;
+    height: 115px;
+    -webkit-transform: translate(0, 5px);
+            transform: translate(0, 5px);
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .wrapper {
+    height: 170;
+  }
+  .playBtn {
+    height: 3vh;
+    margin: 115px auto;
+  }
+  p {
+    line-height: 3vh;
+  }
+  .letters {
+    display: block;
+    margin: 5px auto;
+    width: auto;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  body {
+    font-size: 18px;
+  }
+  .wrapper {
+    height: 150px;
+    padding: 0 2vw;
+  }
+  .wrapper,
+  #p5series,
+  #p5retrograde,
+  #p5inverted,
+  #p5invret {
+    border-width: 4px;
+  }
+  .playBtn {
+    margin: 100px auto;
+    padding: 2px;
+  }
+  .letters {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .notes {
+    -webkit-transform: scale(0.6) translate(-30%, 0);
+            transform: scale(0.6) translate(-30%, 0);
+    width: inherit;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 15px;
+  }
+  .wrapper,
+  #p5series,
+  #p5retrograde,
+  #p5inverted,
+  #p5invret {
+    border-width: 3px;
+  }
+  .letters {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .wrapper {
+    min-height: 100px;
+    height: 50px;
+  }
+  .notes {
+    -webkit-transform: scale(0.4) translate(-55%, -40%);
+            transform: scale(0.4) translate(-55%, -40%);
+  }
+  .letters,
+  p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .playBtn {
+    margin: 60px auto;
+    padding: 5px;
+    min-height: 15px;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .notes {
+    visibility: hidden;
+  }
+  .wrapper {
+    min-height: 70px;
+  }
+  .playBtn {
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  body {
+    font-size: 10px;
+  }
+  .letters {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 225px) {
+  .letters {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 180px) {
+  body {
+    visibility: hidden;
+  }
+}
+/*# sourceMappingURL=style.css.map */
